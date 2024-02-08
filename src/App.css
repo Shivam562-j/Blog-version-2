@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 9px solid;
+    border-color: #dbdcef;
+    border-right-color: #474bff;
+    animation: spinner-d3wgkg 1s infinite linear;
+}
+
+@keyframes spinner-d3wgkg {
+    to {
+        transform: rotate(1turn);
+    }
+}
